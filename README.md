@@ -86,7 +86,7 @@ The swagger-ui can be found on http://localhost:8080/swagger-ui.html where you c
 ```
 {
   "msisdn": "+27832742335",
-  "sessionId": "#2336"
+  "sessionId": "#2335"
 }
 ```
 Response:
@@ -99,7 +99,7 @@ The correct response with the first USSD message is returned.
 ```
 {
   "msisdn": "+27832742335",
-  "sessionId": "#2336",
+  "sessionId": "#2335",
   "userEntry": "1"
 }
 ```
@@ -111,7 +111,7 @@ Response:
 ```
 {
   "msisdn": "+27832742335",
-  "sessionId": "#2336"}
+  "sessionId": "#2335"}
 ```
 Response
 The user is taken to the screen where they left off
