@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  mysqldb:
+    image: mysql:5.7
+    restart: on-failure
+    env_file: .env
+    environment:
+      - MYSQL_DATABASE=ussd
+      - MYSQL_ROOT_PASSWORD=admin
+    ports:
+      - 3306:3306
+    command: --init-file /data/application/init.sql
+    networks:
+      - ussd-net
+    volumes:
+      - ./init.sql:/data/application/init.sql
+      - db_data:/var/lib/mysql
+  app:
+    depends_on:
+      - mysqldb
+    build: .
+    restart: on-failure
+    env_file: .env
+    ports:
+      - 8080:8080
+    networks:
+      - ussd-net
+    stdin_open: true
+    tty: true
+
+networks:
+  ussd-net:
+
+volumes:
+  db_data:
