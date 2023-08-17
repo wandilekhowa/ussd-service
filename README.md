@@ -24,12 +24,6 @@ Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 13
 Server version: 5.7.43 MySQL Community Server (GPL)
 
-Copyright (c) 2000, 2023, Oracle and/or its affiliates.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 mysql> use ussd;
@@ -161,3 +155,11 @@ The user is shown a confirmation message displaying the goodbye message
 Response
 The user is shown an error message as shown below
 ![Mama Money Error Response ](./images/mama_money_7.png)
+
+
+# Stopping The Application
+When done running the application, you can stop it as follows:
+`$ docker-compose down`
+
+In order to delete the db volume and network, run the command with the -v flag:
+`$ docker-compose down -v`
