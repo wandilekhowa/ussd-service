@@ -89,7 +89,7 @@ The swagger-ui can be found on http://localhost:8080/swagger-ui.html where you c
   "sessionId": "#2336"
 }
 ```
-Response
+Response:
 ![Mama Money Request 1](./images/mama_money_1.png)
 
 The correct response with the first USSD message is returned.
@@ -103,7 +103,7 @@ The correct response with the first USSD message is returned.
   "userEntry": "1"
 }
 ```
-Response
+Response:
 ![Mama Money Request 2](./images/mama_money_2.png)
 
 3. USSD Disconnect & Resume Session
@@ -126,7 +126,7 @@ The user is taken to the screen where they left off
   "userEntry": "2500"
 }
 ```
-Response
+Response:
 The user is shown a confirmation message displaying the correct amount and currency (after currency conversion)
 ![Mama Money Confirm Transaction](./images/amount_format.png)
 
@@ -139,7 +139,7 @@ The user is shown a confirmation message displaying the correct amount and curre
   "userEntry": "1"
 }
 ```
-Response
+Response:
 The user is shown a confirmation message displaying the goodbye message
 ![Mama Money Confirmation Message](./images/mama_money_6.png)
 
@@ -152,7 +152,7 @@ The user is shown a confirmation message displaying the goodbye message
   "sessionId": "#2335"
 }
 ```
-Response
+Response:
 The user is shown an error message as shown below
 ![Mama Money Error Response ](./images/mama_money_7.png)
 
